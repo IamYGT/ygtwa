@@ -11,9 +11,9 @@ import (
 	"go.mau.fi/whatsmeow/proto/waE2E"
 	"go.mau.fi/whatsmeow/types"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	"github.com/IamYGT/ygtwa/config"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow/types/events"
 )

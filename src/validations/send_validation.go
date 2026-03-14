@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainSend "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/send"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	"github.com/IamYGT/ygtwa/config"
+	domainSend "github.com/IamYGT/ygtwa/domains/send"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	"github.com/dustin/go-humanize"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"

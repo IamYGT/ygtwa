@@ -61,7 +61,7 @@ CHATWOOT_DAYS_LIMIT_IMPORT_MESSAGES=7
 ```yaml
 services:
   whatsapp-api:
-    image: iamygt/ygt-labs-ai-whatsapp:latest
+    image: iamygt/ygtwa:latest
     environment:
       - CHATWOOT_ENABLED=true
       - CHATWOOT_URL=https://app.chatwoot.com

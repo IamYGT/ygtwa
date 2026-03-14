@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/rest/helpers"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/ui/rest/helpers"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow"
 )

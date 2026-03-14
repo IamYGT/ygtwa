@@ -9,7 +9,7 @@ var (
 	AppPort                = "3000"
 	AppHost                = "0.0.0.0"
 	AppDebug               = false
-	AppOs                  = "YGT Labs AI"
+	AppOs                  = "YGTWA"
 	AppPlatform            = waCompanionReg.DeviceProps_PlatformType(7) // DESKTOP
 	AppBasicAuthCredential []string
 	AppBasePath            = ""

@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	domainGroup "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/group"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	domainGroup "github.com/IamYGT/ygtwa/domains/group"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	"github.com/stretchr/testify/assert"
 	"go.mau.fi/whatsmeow"
 )

@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	domainApp "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/app"
+	domainApp "github.com/IamYGT/ygtwa/domains/app"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )

@@ -5,9 +5,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/mcp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/rest/helpers"
+	"github.com/IamYGT/ygtwa/config"
+	"github.com/IamYGT/ygtwa/ui/mcp"
+	"github.com/IamYGT/ygtwa/ui/rest/helpers"
 	"github.com/mark3labs/mcp-go/server"
 	"github.com/spf13/cobra"
 )

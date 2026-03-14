@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 )

@@ -124,7 +124,7 @@ jobs:
             draft: false
             github:
               owner: "IamYGT"
-              name: "ygt-labs-ai-whatsapp"
+              name: "ygtwa"
           EOF
 
       - name: Run GoReleaser for Linux/Windows
@@ -196,7 +196,7 @@ jobs:
             draft: false
             github:
               owner: "IamYGT"
-              name: "ygt-labs-ai-whatsapp"
+              name: "ygtwa"
           EOF
 
       - name: Run GoReleaser for macOS

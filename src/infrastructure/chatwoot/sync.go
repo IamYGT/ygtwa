@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	"github.com/IamYGT/ygtwa/config"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/proto/waE2E"

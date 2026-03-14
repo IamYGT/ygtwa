@@ -8,12 +8,12 @@ import (
 	"image"
 	"time"
 
-	domainUser "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/user"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/validations"
+	domainUser "github.com/IamYGT/ygtwa/domains/user"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	"github.com/IamYGT/ygtwa/validations"
 	"github.com/disintegration/imaging"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow"
@@ -191,7 +191,7 @@ func (service serviceUser) Avatar(ctx context.Context, request domainUser.Avatar
 // imposed by WhatsApp's multi-device protocol. Pagination is not supported by WhatsApp for this query.
 //
 // For more details, see: https://github.com/tulir/whatsmeow/blob/main/group.go
-// Related issue: https://github.com/IamYGT/ygt-labs-ai-whatsapp/issues/553
+// Related issue: https://github.com/IamYGT/ygtwa/issues/553
 func (service serviceUser) MyListGroups(ctx context.Context) (response domainUser.MyListGroupsResponse, err error) {
 	client := whatsapp.ClientFromContext(ctx)
 	if client == nil {

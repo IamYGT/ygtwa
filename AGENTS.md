@@ -1,6 +1,6 @@
-# YGT Labs AI WhatsApp — Agent Instructions
+# YGTWA — Agent Instructions
 
-This is **YGT Labs AI WhatsApp**, a Go-based WhatsApp Web API bridge maintained by YGT Labs AI.
+This is **YGTWA**, a Go-based WhatsApp Web API bridge maintained by YGTWA.
 It is based on the whatsmeow library and provides a REST API and MCP interface for WhatsApp.
 
 ## Repository Structure

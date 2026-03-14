@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	domainNewsletter "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/newsletter"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	domainNewsletter "github.com/IamYGT/ygtwa/domains/newsletter"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	"github.com/stretchr/testify/assert"
 )
 

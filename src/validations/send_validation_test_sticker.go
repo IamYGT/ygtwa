@@ -5,8 +5,8 @@ import (
 	"mime/multipart"
 	"testing"
 
-	domainSend "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/send"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	domainSend "github.com/IamYGT/ygtwa/domains/send"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	"github.com/stretchr/testify/assert"
 )
 

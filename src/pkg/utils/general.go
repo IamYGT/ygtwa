@@ -20,7 +20,7 @@ import (
 	"time"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
+	"github.com/IamYGT/ygtwa/config"
 	"github.com/sirupsen/logrus"
 	_ "golang.org/x/image/webp" // Register WebP format
 )

@@ -2,7 +2,7 @@ package main
 
 import (
 	"embed"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/cmd"
+	"github.com/IamYGT/ygtwa/cmd"
 )
 
 //go:embed views/index.html

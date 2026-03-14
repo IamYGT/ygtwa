@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow/types"
 	"go.mau.fi/whatsmeow/types/events"

@@ -1,4 +1,4 @@
-module github.com/IamYGT/ygt-labs-ai-whatsapp
+module github.com/IamYGT/ygtwa
 
 go 1.25.0
 

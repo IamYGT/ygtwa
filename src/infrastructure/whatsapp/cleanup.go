@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/config"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/store/sqlstore"

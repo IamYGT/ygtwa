@@ -1,5 +1,5 @@
 # sdk-node Configs
-npmName: "@iamygt/sdk-ygt-labs-ai-whatsapp"
+npmName: "@iamygt/sdk-ygtwa"
 npmRepository: "https://npm.pkg.github.com"
 snapshot: false
 supportsES6: true

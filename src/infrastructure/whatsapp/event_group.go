@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
+	"github.com/IamYGT/ygtwa/config"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/types"

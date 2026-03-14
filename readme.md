@@ -1,15 +1,15 @@
 <div align="center">
 
-<img src="src/views/assets/ygt-logo.svg" alt="YGT Labs AI WhatsApp" width="120" />
+<img src="src/views/assets/ygt-logo.svg" alt="YGTWA" width="120" />
 
-# YGT Labs AI WhatsApp
+# YGTWA
 
 **Open-source WhatsApp Web REST API & MCP Bridge**
 
 Built with Go · Maintained by [YGT Labs](https://github.com/IamYGT)
 
-[![GitHub release](https://img.shields.io/github/v/release/IamYGT/ygt-labs-ai-whatsapp?style=flat-square)](https://github.com/IamYGT/ygt-labs-ai-whatsapp/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/iamygt/ygt-labs-ai-whatsapp?style=flat-square)](https://hub.docker.com/r/iamygt/ygt-labs-ai-whatsapp)
+[![GitHub release](https://img.shields.io/github/v/release/IamYGT/ygtwa?style=flat-square)](https://github.com/IamYGT/ygtwa/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/iamygt/ygtwa?style=flat-square)](https://hub.docker.com/r/iamygt/ygtwa)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENCE.txt)
 [![Go Version](https://img.shields.io/badge/Go-1.25+-blue?style=flat-square)](https://go.dev)
 
@@ -19,7 +19,7 @@ Built with Go · Maintained by [YGT Labs](https://github.com/IamYGT)
 
 ## Overview
 
-**YGT Labs AI WhatsApp** is a self-hosted WhatsApp Web bridge exposing a full REST API and [MCP](https://modelcontextprotocol.io) interface. It supports multiple WhatsApp accounts (multi-device) via a device ID header.
+**YGTWA** is a self-hosted WhatsApp Web bridge exposing a full REST API and [MCP](https://modelcontextprotocol.io) interface. It supports multiple WhatsApp accounts (multi-device) via a device ID header.
 
 ### Key Features
 
@@ -45,7 +45,7 @@ docker run -d \
   -v ygt_storages:/app/storages \
   -e APP_BASIC_AUTH=admin:password \
   -e WHATSAPP_WEBHOOK=https://your-app.com/webhook \
-  iamygt/ygt-labs-ai-whatsapp:latest
+  iamygt/ygtwa:latest
 ```
 
 ### Docker Compose
@@ -53,14 +53,14 @@ docker run -d \
 ```yaml
 services:
   ygt-whatsapp:
-    image: iamygt/ygt-labs-ai-whatsapp:latest
+    image: iamygt/ygtwa:latest
     container_name: ygt-whatsapp
     restart: unless-stopped
     ports:
       - "3000:3000"
     environment:
       - APP_BASIC_AUTH=admin:yourpassword
-      - APP_OS=YGT Labs AI
+      - APP_OS=YGTWA
       - WHATSAPP_WEBHOOK=https://your-app.com/api/webhook
       - WHATSAPP_WEBHOOK_SECRET=your-secret
       - WHATSAPP_WEBHOOK_WHITELIST_EVENTS=message,message.ack,message.revoke,connection,call.offer,call.accept,call.reject,call.terminated
@@ -75,8 +75,8 @@ volumes:
 ### Build from Source
 
 ```bash
-git clone https://github.com/IamYGT/ygt-labs-ai-whatsapp.git
-cd ygt-labs-ai-whatsapp
+git clone https://github.com/IamYGT/ygtwa.git
+cd ygtwa
 docker build -f docker/golang.Dockerfile -t ygt-whatsapp:latest .
 ```
 
@@ -99,7 +99,7 @@ All settings can be provided via **environment variables** or **CLI flags**.
 |---------------------|----------|---------|-------------|
 | `APP_PORT` | `--port` | `3000` | HTTP server port |
 | `APP_HOST` | `--host` | `0.0.0.0` | Bind address |
-| `APP_OS` | `--os` | `YGT Labs AI` | Device name shown in WhatsApp linked devices |
+| `APP_OS` | `--os` | `YGTWA` | Device name shown in WhatsApp linked devices |
 | `APP_DEBUG` | `--debug` | `false` | Enable verbose logging |
 | `APP_BASIC_AUTH` | `--basic-auth` | — | `user:password` for API auth |
 | `APP_BASE_PATH` | `--base-path` | — | Sub-path prefix, e.g. `--base-path="/ygt"` |
@@ -204,7 +204,7 @@ curl -u admin:pass -H "X-Device-Id: 905551234567" \
 ## Architecture
 
 ```
-ygt-labs-ai-whatsapp/
+ygtwa/
 ├── src/
 │   ├── cmd/                  # CLI commands (rest, mcp)
 │   ├── config/               # settings.go — all app config
@@ -233,8 +233,8 @@ ygt-labs-ai-whatsapp/
 Contributions are welcome! Please open an issue first to discuss what you would like to change.
 
 ```bash
-git clone https://github.com/IamYGT/ygt-labs-ai-whatsapp.git
-cd ygt-labs-ai-whatsapp/src
+git clone https://github.com/IamYGT/ygtwa.git
+cd ygtwa/src
 go mod download
 go test ./...
 ```
@@ -243,5 +243,5 @@ go test ./...
 
 ## License
 
-[MIT](LICENCE.txt) © 2025 YGT Labs AI
+[MIT](LICENCE.txt) © 2025 YGTWA
 

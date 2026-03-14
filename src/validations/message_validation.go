@@ -3,8 +3,8 @@ package validations
 import (
 	"context"
 
-	domainMessage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/message"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	domainMessage "github.com/IamYGT/ygtwa/domains/message"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 )
 

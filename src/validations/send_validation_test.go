@@ -5,9 +5,9 @@ import (
 	"mime/multipart"
 	"testing"
 
-	domainMessage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/message"
-	domainSend "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/send"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	domainMessage "github.com/IamYGT/ygtwa/domains/message"
+	domainSend "github.com/IamYGT/ygtwa/domains/send"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	"github.com/stretchr/testify/assert"
 )
 

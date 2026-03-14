@@ -32,7 +32,7 @@ jobs:
       - name: Validate tag exists (Docker Hub)
         run: |
           echo "Checking if tag ${{ inputs.tag }} exists on Docker Hub..."
-          if ! docker buildx imagetools inspect ${{ secrets.REGISTRY_USERNAME }}/ygt-labs-ai-whatsapp:${{ inputs.tag }} > /dev/null 2>&1; then
+          if ! docker buildx imagetools inspect ${{ secrets.REGISTRY_USERNAME }}/ygtwa:${{ inputs.tag }} > /dev/null 2>&1; then
             echo "::error::Tag ${{ inputs.tag }} does not exist on Docker Hub. Please ensure the tag has been built first."
             exit 1
           fi
@@ -40,7 +40,7 @@ jobs:
       - name: Validate tag exists (GHCR)
         run: |
           echo "Checking if tag ${{ inputs.tag }} exists on GHCR..."
-          if ! docker buildx imagetools inspect ghcr.io/${{ github.repository_owner }}/ygt-labs-ai-whatsapp:${{ inputs.tag }} > /dev/null 2>&1; then
+          if ! docker buildx imagetools inspect ghcr.io/${{ github.repository_owner }}/ygtwa:${{ inputs.tag }} > /dev/null 2>&1; then
             echo "::error::Tag ${{ inputs.tag }} does not exist on GHCR. Please ensure the tag has been built first."
             exit 1
           fi
@@ -48,10 +48,10 @@ jobs:
       - name: Create Latest Manifest (Docker Hub)
         run: |
           docker buildx imagetools create \
-            -t ${{ secrets.REGISTRY_USERNAME }}/ygt-labs-ai-whatsapp:latest \
-            ${{ secrets.REGISTRY_USERNAME }}/ygt-labs-ai-whatsapp:${{ inputs.tag }}
+            -t ${{ secrets.REGISTRY_USERNAME }}/ygtwa:latest \
+            ${{ secrets.REGISTRY_USERNAME }}/ygtwa:${{ inputs.tag }}
       - name: Create Latest Manifest (GHCR)
         run: |
           docker buildx imagetools create \
-            -t ghcr.io/${{ github.repository_owner }}/ygt-labs-ai-whatsapp:latest \
-            ghcr.io/${{ github.repository_owner }}/ygt-labs-ai-whatsapp:${{ inputs.tag }}
+            -t ghcr.io/${{ github.repository_owner }}/ygtwa:latest \
+            ghcr.io/${{ github.repository_owner }}/ygtwa:${{ inputs.tag }}

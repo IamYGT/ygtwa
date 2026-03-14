@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"

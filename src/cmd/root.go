@@ -11,20 +11,20 @@ import (
 
 	"go.mau.fi/whatsmeow/store/sqlstore"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainApp "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/app"
-	domainChat "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chat"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	domainDevice "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/device"
-	domainGroup "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/group"
-	domainMessage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/message"
-	domainNewsletter "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/newsletter"
-	domainSend "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/send"
-	domainUser "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/user"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/chatstorage"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/usecase"
+	"github.com/IamYGT/ygtwa/config"
+	domainApp "github.com/IamYGT/ygtwa/domains/app"
+	domainChat "github.com/IamYGT/ygtwa/domains/chat"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	domainDevice "github.com/IamYGT/ygtwa/domains/device"
+	domainGroup "github.com/IamYGT/ygtwa/domains/group"
+	domainMessage "github.com/IamYGT/ygtwa/domains/message"
+	domainNewsletter "github.com/IamYGT/ygtwa/domains/newsletter"
+	domainSend "github.com/IamYGT/ygtwa/domains/send"
+	domainUser "github.com/IamYGT/ygtwa/domains/user"
+	"github.com/IamYGT/ygtwa/infrastructure/chatstorage"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	"github.com/IamYGT/ygtwa/usecase"
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/sirupsen/logrus"
@@ -58,7 +58,7 @@ var (
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Short: "Send free whatsapp API",
-	Long: `This application is from clone https://github.com/IamYGT/ygt-labs-ai-whatsapp, 
+	Long: `This application is from clone https://github.com/IamYGT/ygtwa, 
 you can send whatsapp over http api but your whatsapp account have to be multi device version`,
 }
 

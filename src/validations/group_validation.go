@@ -3,8 +3,8 @@ package validations
 import (
 	"context"
 
-	domainGroup "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/group"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	domainGroup "github.com/IamYGT/ygtwa/domains/group"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"go.mau.fi/whatsmeow"
 )

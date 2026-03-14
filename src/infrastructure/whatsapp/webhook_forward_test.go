@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
+	"github.com/IamYGT/ygtwa/config"
 )
 
 func TestForwardPayloadToConfiguredWebhooks_NoWebhooksConfigured(t *testing.T) {

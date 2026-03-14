@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
-	domainDevice "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/device"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/websocket"
+	domainDevice "github.com/IamYGT/ygtwa/domains/device"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/ui/websocket"
 )
 
 type serviceDevice struct {

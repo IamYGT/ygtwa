@@ -7,13 +7,13 @@ import (
 	"os"
 	"time"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainApp "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/app"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/websocket"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/validations"
+	"github.com/IamYGT/ygtwa/config"
+	domainApp "github.com/IamYGT/ygtwa/domains/app"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
+	"github.com/IamYGT/ygtwa/ui/websocket"
+	"github.com/IamYGT/ygtwa/validations"
 	fiberUtils "github.com/gofiber/fiber/v2/utils"
 	_ "github.com/mattn/go-sqlite3"
 	"github.com/sirupsen/logrus"
@@ -149,7 +149,7 @@ func (service *serviceApp) LoginWithCode(ctx context.Context, deviceID string, p
 	}
 
 	logrus.Infof("[LOGIN_CODE][%s] Starting phone pairing for number: %s", deviceID, phoneNumber)
-	loginCode, err = client.PairPhone(ctx, phoneNumber, true, whatsmeow.PairClientChrome, "YGT Labs AI")
+	loginCode, err = client.PairPhone(ctx, phoneNumber, true, whatsmeow.PairClientChrome, "YGTWA")
 	if err != nil {
 		logrus.Errorf("Error when pairing phone: %s", err.Error())
 		return loginCode, err

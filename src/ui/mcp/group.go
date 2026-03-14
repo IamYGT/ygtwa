@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	domainGroup "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/group"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	mcpHelpers "github.com/IamYGT/ygt-labs-ai-whatsapp/ui/mcp/helpers"
+	domainGroup "github.com/IamYGT/ygtwa/domains/group"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	mcpHelpers "github.com/IamYGT/ygtwa/ui/mcp/helpers"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 	"go.mau.fi/whatsmeow"

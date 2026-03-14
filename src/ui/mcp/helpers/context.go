@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
 )
 
 // ContextWithDefaultDevice resolves the default device from the global DeviceManager

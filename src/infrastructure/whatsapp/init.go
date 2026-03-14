@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/config"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/store"
 	"go.mau.fi/whatsmeow/store/sqlstore"

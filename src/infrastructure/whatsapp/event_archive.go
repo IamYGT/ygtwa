@@ -3,7 +3,7 @@ package whatsapp
 import (
 	"context"
 
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/types/events"

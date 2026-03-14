@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"time"
 
-	domainChat "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chat"
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/validations"
+	domainChat "github.com/IamYGT/ygtwa/domains/chat"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	"github.com/IamYGT/ygtwa/validations"
 	"github.com/sirupsen/logrus"
 	"go.mau.fi/whatsmeow/appstate"
 )

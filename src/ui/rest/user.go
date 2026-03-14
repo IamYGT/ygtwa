@@ -1,9 +1,9 @@
 package rest
 
 import (
-	domainUser "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/user"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	domainUser "github.com/IamYGT/ygtwa/domains/user"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/gofiber/fiber/v2"
 )
 

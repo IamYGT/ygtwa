@@ -3,10 +3,10 @@ package rest
 import (
 	"fmt"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainApp "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/app"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	"github.com/IamYGT/ygtwa/config"
+	domainApp "github.com/IamYGT/ygtwa/domains/app"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/gofiber/fiber/v2"
 )
 

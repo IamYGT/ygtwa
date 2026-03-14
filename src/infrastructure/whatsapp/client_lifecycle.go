@@ -1,7 +1,7 @@
 package whatsapp
 
 import (
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/store/sqlstore"
 )

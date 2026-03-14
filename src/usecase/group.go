@@ -8,12 +8,12 @@ import (
 	"go.mau.fi/whatsmeow"
 	"go.mau.fi/whatsmeow/types"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	domainGroup "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/group"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/validations"
+	"github.com/IamYGT/ygtwa/config"
+	domainGroup "github.com/IamYGT/ygtwa/domains/group"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	"github.com/IamYGT/ygtwa/validations"
 )
 
 type serviceGroup struct{}

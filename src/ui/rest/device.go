@@ -1,8 +1,8 @@
 package rest
 
 import (
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/domains/device"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
+	"github.com/IamYGT/ygtwa/domains/device"
+	"github.com/IamYGT/ygtwa/pkg/utils"
 	"github.com/gofiber/fiber/v2"
 )
 

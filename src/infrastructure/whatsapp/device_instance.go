@@ -4,8 +4,8 @@ import (
 	"sync"
 	"time"
 
-	domainChatStorage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chatstorage"
-	domainDevice "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/device"
+	domainChatStorage "github.com/IamYGT/ygtwa/domains/chatstorage"
+	domainDevice "github.com/IamYGT/ygtwa/domains/device"
 	"go.mau.fi/whatsmeow"
 )
 

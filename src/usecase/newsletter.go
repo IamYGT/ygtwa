@@ -3,11 +3,11 @@ package usecase
 import (
 	"context"
 
-	domainNewsletter "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/newsletter"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/validations"
+	domainNewsletter "github.com/IamYGT/ygtwa/domains/newsletter"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	"github.com/IamYGT/ygtwa/validations"
 )
 
 type serviceNewsletter struct{}

@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
+	"github.com/IamYGT/ygtwa/config"
 	"go.mau.fi/whatsmeow/proto/waCommon"
 	"go.mau.fi/whatsmeow/proto/waE2E"
 	"go.mau.fi/whatsmeow/types"

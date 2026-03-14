@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"strings"
 
-	domainChat "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/chat"
-	domainMessage "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/message"
-	domainUser "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/user"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/utils"
-	mcpHelpers "github.com/IamYGT/ygt-labs-ai-whatsapp/ui/mcp/helpers"
+	domainChat "github.com/IamYGT/ygtwa/domains/chat"
+	domainMessage "github.com/IamYGT/ygtwa/domains/message"
+	domainUser "github.com/IamYGT/ygtwa/domains/user"
+	"github.com/IamYGT/ygtwa/pkg/utils"
+	mcpHelpers "github.com/IamYGT/ygtwa/ui/mcp/helpers"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )

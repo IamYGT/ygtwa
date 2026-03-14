@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	domainSend "github.com/IamYGT/ygt-labs-ai-whatsapp/domains/send"
-	mcpHelpers "github.com/IamYGT/ygt-labs-ai-whatsapp/ui/mcp/helpers"
+	domainSend "github.com/IamYGT/ygtwa/domains/send"
+	mcpHelpers "github.com/IamYGT/ygtwa/ui/mcp/helpers"
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )

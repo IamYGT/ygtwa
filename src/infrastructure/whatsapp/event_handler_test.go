@@ -3,7 +3,7 @@ package whatsapp
 import (
 	"testing"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
+	"github.com/IamYGT/ygtwa/config"
 	"go.mau.fi/whatsmeow/types"
 )
 

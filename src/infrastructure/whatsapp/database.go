@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	"github.com/IamYGT/ygtwa/config"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	"go.mau.fi/whatsmeow/store/sqlstore"
 	waLog "go.mau.fi/whatsmeow/util/log"
 )

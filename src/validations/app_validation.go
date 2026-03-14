@@ -3,7 +3,7 @@ package validations
 import (
 	"context"
 	"fmt"
-	pkgError "github.com/IamYGT/ygt-labs-ai-whatsapp/pkg/error"
+	pkgError "github.com/IamYGT/ygtwa/pkg/error"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"regexp"
 )

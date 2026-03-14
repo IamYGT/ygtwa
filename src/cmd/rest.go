@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/config"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/infrastructure/whatsapp"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/rest"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/rest/helpers"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/rest/middleware"
-	"github.com/IamYGT/ygt-labs-ai-whatsapp/ui/websocket"
+	"github.com/IamYGT/ygtwa/config"
+	"github.com/IamYGT/ygtwa/infrastructure/whatsapp"
+	"github.com/IamYGT/ygtwa/ui/rest"
+	"github.com/IamYGT/ygtwa/ui/rest/helpers"
+	"github.com/IamYGT/ygtwa/ui/rest/middleware"
+	"github.com/IamYGT/ygtwa/ui/websocket"
 	"github.com/dustin/go-humanize"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/basicauth"
@@ -26,7 +26,7 @@ import (
 var restCmd = &cobra.Command{
 	Use:   "rest",
 	Short: "Send whatsapp API over http",
-	Long:  `This application is from clone https://github.com/IamYGT/ygt-labs-ai-whatsapp`,
+	Long:  `This application is from clone https://github.com/IamYGT/ygtwa`,
 	Run:   restServer,
 }
 
