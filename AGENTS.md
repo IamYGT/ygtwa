@@ -29,13 +29,13 @@ docs/           → OpenAPI spec, SDK config, guides
 ## Build
 
 ```bash
-cd src && go build -o ../bin/ygt-whatsapp
+cd src && go build -o ../bin/ygtwa
 ```
 
 ## Docker Build
 
 ```bash
-docker build -f docker/golang.Dockerfile -t ygt-whatsapp:latest .
+docker build -f docker/golang.Dockerfile -t ygtwa:latest .
 ```
 
 ## Key Conventions

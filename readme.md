@@ -40,7 +40,7 @@ Built with Go · Maintained by [YGT Labs](https://github.com/IamYGT)
 
 ```bash
 docker run -d \
-  --name ygt-whatsapp \
+  --name ygtwa \
   -p 3000:3000 \
   -v ygt_storages:/app/storages \
   -e APP_BASIC_AUTH=admin:password \
@@ -52,9 +52,9 @@ docker run -d \
 
 ```yaml
 services:
-  ygt-whatsapp:
+  ygtwa:
     image: iamygt/ygtwa:latest
-    container_name: ygt-whatsapp
+    container_name: ygtwa
     restart: unless-stopped
     ports:
       - "3000:3000"
@@ -77,7 +77,7 @@ volumes:
 ```bash
 git clone https://github.com/IamYGT/ygtwa.git
 cd ygtwa
-docker build -f docker/golang.Dockerfile -t ygt-whatsapp:latest .
+docker build -f docker/golang.Dockerfile -t ygtwa:latest .
 ```
 
 Or build the binary directly:
@@ -85,8 +85,8 @@ Or build the binary directly:
 ```bash
 cd src
 go mod download
-go build -ldflags="-w -s" -o ../bin/ygt-whatsapp
-./bin/ygt-whatsapp rest
+go build -ldflags="-w -s" -o ../bin/ygtwa
+./bin/ygtwa rest
 ```
 
 ---
@@ -178,7 +178,7 @@ Configure which events to receive via `WHATSAPP_WEBHOOK_WHITELIST_EVENTS`:
 Start the MCP server:
 
 ```bash
-./ygt-whatsapp mcp --port 8080
+./ygtwa mcp --port 8080
 ```
 
 Exposes WhatsApp operations as MCP tools for AI agent integration (Claude, GPT, etc.).
